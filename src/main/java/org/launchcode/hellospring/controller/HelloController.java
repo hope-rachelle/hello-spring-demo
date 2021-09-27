@@ -13,7 +13,7 @@ public class HelloController {
     //@ResponseBody  //added to top
     public String helloQuery(@RequestParam String name, @RequestParam String language){
         String selectLanguageGreeting = HelloController.createMessage(name, language);
-        return selectLanguageGreeting;
+        return"<h3 style='color:goldenrod;'> "+selectLanguageGreeting+"</h3>";
     }
     @GetMapping("goodbye")//lives at /hello/goodbye
     //@ResponseBody
