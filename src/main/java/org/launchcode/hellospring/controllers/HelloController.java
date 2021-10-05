@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @Controller
 public class HelloController {
-
-    //    // Handle request at path /hello
+    // Handle request at path /hello
 //    @GetMapping("hello")
 //    @ResponseBody
 //    public String hello() {
@@ -38,16 +37,9 @@ public class HelloController {
 
 
     @GetMapping("form")
-    @ResponseBody
+    //@ResponseBody no longer need when using template
     public String helloForm() {
-        return "<html>" +
-                "<body>" +
-                "<form action = 'hello' method = 'post'>" + // submit a request to /hello
-                "<input type = 'text' name = 'name' >" +
-                "<input type = 'submit' value = 'Greet Me!' >" +
-                "</form>" +
-                "</body>" +
-                "</html>";
+        return "form";
     }
 
 }
