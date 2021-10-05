@@ -6,7 +6,7 @@ plugins {
 
 group = 'org.launchcode'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '16'
+sourceCompatibility = '14'
 
 configurations {
 	developmentOnly
@@ -20,9 +20,9 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web:2.5.4'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools:2.5.4'
-	testImplementation('org.springframework.boot:spring-boot-starter-test:2.5.4') {
+	implementation 'org.springframework.boot:spring-boot-starter-web:2.5.5'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools:2.5.5'
+	testImplementation('org.springframework.boot:spring-boot-starter-test:2.5.5') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 }
